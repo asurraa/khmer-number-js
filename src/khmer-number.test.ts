@@ -1,17 +1,67 @@
 import { Num2Word } from "./index";
 
-test("Test number 1 roman", () => {
+test("testing with roman number", () => {
+  expect(Num2Word("0", "")).toBe("សូន្យ");
   expect(Num2Word("1", "")).toBe("មួយ");
+  expect(Num2Word("2", "")).toBe("ពីរ");
+  expect(Num2Word("3", "")).toBe("បី");
+  expect(Num2Word("4", "")).toBe("បួន");
+  expect(Num2Word("5", "")).toBe("ប្រាំ");
+  expect(Num2Word("6", "")).toBe("ប្រាំមួយ");
+  expect(Num2Word("7", "")).toBe("ប្រាំពីរ");
+  expect(Num2Word("8", "")).toBe("ប្រាំបី");
+  expect(Num2Word("9", "")).toBe("ប្រាំបួន");
+  expect(Num2Word("10", "")).toBe("ដប់");
+  expect(Num2Word("20", "")).toBe("ម្ភៃ");
+  expect(Num2Word("30", "")).toBe("សាមសិប");
+  expect(Num2Word("40", "")).toBe("សែសិប");
+  expect(Num2Word("50", "")).toBe("ហាសិប");
+  expect(Num2Word("60", "")).toBe("ហុកសិប");
+  expect(Num2Word("70", "")).toBe("ចិតសិប");
+  expect(Num2Word("80", "")).toBe("ប៉ែតសិប");
+  expect(Num2Word("90", "")).toBe("កៅសិប");
+  expect(Num2Word("100", "")).toBe("មួយរយ");
+  expect(Num2Word("1000", "")).toBe("មួយពាន់");
+  expect(Num2Word("10000", "")).toBe("មួយម៉ឺន");
+  expect(Num2Word("100000", "")).toBe("មួយសែន");
+  expect(Num2Word("1000000", "")).toBe("មួយលាន");
+  expect(Num2Word("1234", "")).toBe("មួយពាន់ពីររយសាមសិបបួន");
+  expect(Num2Word("1234.78", "")).toBe("មួយពាន់ពីររយសាមសិបបួនចុចចិតសិបប្រាំបី");
+  expect(Num2Word("10005.55", "")).toBe("មួយម៉ឺនប្រាំចុចហាសិបប្រាំ");
+  expect(Num2Word("12.05", "")).toBe("ដប់ពីរចុចសូន្យប្រាំ");
+  expect(Num2Word("12.0005", "")).toBe("ដប់ពីរចុចសូន្យសូន្យសូន្យប្រាំ");
+  expect(Num2Word("12.0000", "")).toBe("ដប់ពីរចុចសូន្យសូន្យសូន្យសូន្យ");
 });
 
-test("Test number 12.05 roman", () => {
-  expect(Num2Word("12.05", " ")).toBe("ដប់ ពីរ ចុច សូន្យ ប្រាំ");
-});
-
-test("Test number 1 khmer", () => {
+test("testing with khmer number", () => {
+  expect(Num2Word("០", "")).toBe("សូន្យ");
   expect(Num2Word("១", "")).toBe("មួយ");
-});
-
-test("Test number 12.05 khmer", () => {
-  expect(Num2Word("១២.០៥", " ")).toBe("ដប់ ពីរ ចុច សូន្យ ប្រាំ");
+  expect(Num2Word("២", "")).toBe("ពីរ");
+  expect(Num2Word("៣", "")).toBe("បី");
+  expect(Num2Word("៤", "")).toBe("បួន");
+  expect(Num2Word("៥", "")).toBe("ប្រាំ");
+  expect(Num2Word("៦", "")).toBe("ប្រាំមួយ");
+  expect(Num2Word("៧", "")).toBe("ប្រាំពីរ");
+  expect(Num2Word("៨", "")).toBe("ប្រាំបី");
+  expect(Num2Word("៩", "")).toBe("ប្រាំបួន");
+  expect(Num2Word("១០", "")).toBe("ដប់");
+  expect(Num2Word("២០", "")).toBe("ម្ភៃ");
+  expect(Num2Word("៣០", "")).toBe("សាមសិប");
+  expect(Num2Word("៤០", "")).toBe("សែសិប");
+  expect(Num2Word("៥០", "")).toBe("ហាសិប");
+  expect(Num2Word("៦០", "")).toBe("ហុកសិប");
+  expect(Num2Word("៧០", "")).toBe("ចិតសិប");
+  expect(Num2Word("៨០", "")).toBe("ប៉ែតសិប");
+  expect(Num2Word("៩០", "")).toBe("កៅសិប");
+  expect(Num2Word("១០០", "")).toBe("មួយរយ");
+  expect(Num2Word("១០០០", "")).toBe("មួយពាន់");
+  expect(Num2Word("១០០០០", "")).toBe("មួយម៉ឺន");
+  expect(Num2Word("១០០០០០", "")).toBe("មួយសែន");
+  expect(Num2Word("១០០០០០០", "")).toBe("មួយលាន");
+  expect(Num2Word("១២៣៤", "")).toBe("មួយពាន់ពីររយសាមសិបបួន");
+  expect(Num2Word("១២៣៤.៧៨", "")).toBe("មួយពាន់ពីររយសាមសិបបួនចុចចិតសិបប្រាំបី");
+  expect(Num2Word("១០០០៥.៥៥", "")).toBe("មួយម៉ឺនប្រាំចុចហាសិបប្រាំ");
+  expect(Num2Word("១២.០៥", "")).toBe("ដប់ពីរចុចសូន្យប្រាំ");
+  expect(Num2Word("១២.០០០៥", "")).toBe("ដប់ពីរចុចសូន្យសូន្យសូន្យប្រាំ");
+  expect(Num2Word("១២.០០០០", "")).toBe("ដប់ពីរចុចសូន្យសូន្យសូន្យសូន្យ");
 });
