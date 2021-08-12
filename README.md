@@ -8,8 +8,6 @@ yarn add khmer-number-js
 ```
 
 ```ts
-package main
-
 import { Num2Word } from 'khmer-number-js'
 
 console.log(Num2Word("1", ""))
