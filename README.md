@@ -1,4 +1,4 @@
-[npm](https://img.shields.io/npm/v/khmer-number-js)
+![npm package](https://img.shields.io/npm/v/khmer-number-js.svg?style=flat-square?style=flat-square)
 
 # khmer-number
 
