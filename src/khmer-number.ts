@@ -27,48 +27,49 @@ const KHMER_TENTH: string[] = [
   "កៅសិប",
 ];
 
-const int2Khmer = (num: number, space: string): string => {
+const int2Khmer = (inputNum: number, space: string): string => {
+  const num = Math.floor(inputNum);
   if (num >= 1000000) {
     return sprintf(
       "%sលាន%s%s",
-      int2Khmer(num / 1000000, space),
+      int2Khmer(Math.floor(num / 1000000), space),
       space,
-      int2Khmer(num % 1000000, space)
+      int2Khmer(Math.floor(num % 1000000), space)
     );
   } else if (num >= 100000) {
     return sprintf(
       "%sសែន%s%s",
-      int2Khmer(num / 100000, space),
+      int2Khmer(Math.floor(num / 100000), space),
       space,
-      int2Khmer(num % 100000, space)
+      int2Khmer(Math.floor(num % 100000), space)
     );
   } else if (num >= 10000) {
     return sprintf(
       "%sម៉ឺន%s%s",
-      int2Khmer(num / 10000, space),
+      int2Khmer(Math.floor(num / 10000), space),
       space,
-      int2Khmer(num % 10000, space)
+      int2Khmer(Math.floor(num % 10000), space)
     );
   } else if (num >= 1000) {
     return sprintf(
       "%sពាន់%s%s",
-      int2Khmer(num / 1000, space),
+      int2Khmer(Math.floor(num / 1000), space),
       space,
-      int2Khmer(num % 1000, space)
+      int2Khmer(Math.floor(num % 1000), space)
     );
   } else if (num >= 100) {
     return sprintf(
       "%sរយ%s%s",
-      int2Khmer(num / 100, space),
+      int2Khmer(Math.floor(num / 100), space),
       space,
-      int2Khmer(num % 100, space)
+      int2Khmer(Math.floor(num % 100), space)
     );
   } else if (num >= 10) {
     return sprintf(
       "%s%s%s",
-      KHMER_TENTH[num / 10],
+      KHMER_TENTH[Math.floor(num / 10)],
       space,
-      KHMER_DIGIT_WORD[num % 10]
+      KHMER_DIGIT_WORD[Math.floor(num % 10)]
     );
   } else if (num > 0) {
     return KHMER_DIGIT_WORD[num];
@@ -145,5 +146,3 @@ export const Num2Word = (num: string, space: string): string => {
     int2Khmer(precision, space)
   );
 };
-
-console.log(int2Khmer(444, ""));
