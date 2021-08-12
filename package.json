@@ -6,13 +6,19 @@
   "repository": "git@github.com:asurraa/khmer-lang-js.git",
   "author": "lyhourchhen <ukamilove66@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
   "dependencies": {
     "sprintf-js": "^1.1.2",
     "voca": "^1.4.0"
   },
   "devDependencies": {
+    "@types/jest": "^27.0.0",
     "@types/sprintf-js": "^1.1.2",
     "@types/voca": "^1.4.1",
+    "jest": "^27.0.6",
+    "ts-jest": "^27.0.4",
     "ts-node": "^10.2.0",
     "typescript": "^4.3.5"
   }
