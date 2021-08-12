@@ -1,3 +1,5 @@
+(https://img.shields.io/npm/v/khmer-number-js.svg?style=flat-square?style=flat-square)
+
 # khmer-number
 
 Lib for convert Khmer number into Khmer words in JavaScript & Typescript.
