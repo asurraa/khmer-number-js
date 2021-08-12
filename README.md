@@ -8,8 +8,6 @@ yarn add khmer-number-js
 ```
 
 ```ts
-package main
-
 import { Num2Word } from 'khmer-number-js'
 
 console.log(Num2Word("1", ""))
@@ -23,7 +21,7 @@ console.log(Num2Word(12.05, " "))
 
 MIT
 
-## Reference
+## Reference and special thank to
 
-- [khmer-number](https://github.com/khmerlang/khmer-number) by [RathanakSreang](https://github.com/khmerlang/khmer-number/commits?author=RathanakSreang)
-- Special thank to `@invisal` for converting logic.
+- [khmer-number](https://github.com/khmerlang/khmer-number) by [RathanakSreang](https://github.com/khmerlang/khmer-number)
+- `@invisal` for converting logic.
