@@ -1,4 +1,4 @@
-https://img.shields.io/npm/v/khmer-number-js
+[](https://img.shields.io/npm/v/khmer-number-js)
 
 # khmer-number
 
