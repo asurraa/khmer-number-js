@@ -1,0 +1,19 @@
+{
+  "name": "khmer-number-js",
+  "version": "1.0.0",
+  "description": "convert number to khmer number.",
+  "main": "index.js",
+  "repository": "git@github.com:asurraa/khmer-lang-js.git",
+  "author": "lyhourchhen <ukamilove66@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "sprintf-js": "^1.1.2",
+    "voca": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/sprintf-js": "^1.1.2",
+    "@types/voca": "^1.4.1",
+    "ts-node": "^10.2.0",
+    "typescript": "^4.3.5"
+  }
+}
