@@ -125,7 +125,6 @@ export const Num2Word = (num: string, space: string): string => {
   }
 
   let digit = Number(nums[0]);
-
   let precision = Number(nums[1]);
   let lead_zero = "";
   for (let value of nums[1]) {
