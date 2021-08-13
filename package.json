@@ -1,12 +1,15 @@
 {
   "name": "khmer-number-js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "convert number to khmer number.",
   "main": "dist/index.js",
   "source": "src/index.tsx",
   "repository": "git@github.com:asurraa/khmer-lang-js.git",
   "author": "lyhourchhen <ukamilove66@gmail.com>",
   "license": "MIT",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
     "prepublish": "yarn build",
